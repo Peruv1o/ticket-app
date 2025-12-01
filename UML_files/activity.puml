@@ -1,0 +1,27 @@
+@startuml ActivityRezolvareTicket
+
+start
+
+:Ticket nou;
+
+if (Are suficiente informații?) then (Da)
+  -> [Da] :Diagnostic;
+else (Nu)
+  -> [Nu] :Solicită informații utilizator;
+  :Așteaptă răspuns utilizator;
+  :Utilizator răspunde;
+  -> :Diagnostic;
+endif
+
+repeat
+  if (Rezolvat?) then (Da)
+    -> [Da] :Închidere ticket;
+    :Trimite notificare email;
+    :Arhivare;
+    stop
+  else (Nu)
+    -> [Nu] :Investigație / în lucru;
+  endif
+repeat while (Nu rezolvat)
+
+@enduml

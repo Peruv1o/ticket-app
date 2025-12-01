@@ -1,0 +1,23 @@
+@startuml UseCaseTicketing
+left to right direction
+actor Utilizator
+actor Tehnician
+
+
+rectangle "Sistem Ticketing" {
+Utilizator -- (Creează ticket)
+Utilizator -- (Vizualizează ticket)
+Utilizator -- (Adaugă comentariu)
+
+
+Tehnician -- (Preia ticket)
+Tehnician -- (Actualizează status)
+Tehnician -- (Închide ticket)
+Tehnician -- (Adaugă comentariu)
+}
+
+
+(Creează ticket) .> (Trimite notificare email) : include
+(Închide ticket) .> (Trimite notificare email) : include
+
+@enduml
