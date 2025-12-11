@@ -28,3 +28,4 @@ Diagrame PlantUML incluse:
 ## Prototip
 Mini-card realizat în Figma, prezentând stadiul și fluxul unui ticket:
 New → In Progress → Resolved.
+[Figma Prototype](https://www.figma.com/design/buTQPqP9k0A0zsYs0Yucng/Untitled?node-id=0-1&t=0NNDkDlo6SPOX6N5-1)
