@@ -2,19 +2,6 @@
 
 Documentația proiectului pentru o aplicație desktop de ticketing IT. Include cerințele proiectului, diagrame UML și un prototip simplu pentru fluxul unui ticket.
 
-## Structură
-
-/SRS
-SRS.docx
-/UMLfiles
-activity.puml
-usecase.puml
-/Prototype
-figma-design.png
-
-csharp
-Copy code
-
 ## SRS
 Document cu cerințele aplicației:
 - Funcționale: creare ticket, vizualizare, actualizare status, închidere ticket.
